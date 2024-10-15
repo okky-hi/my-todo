@@ -8,12 +8,12 @@ const DangerButton = forwardRef<HTMLButtonElement, ButtonProps>(({ className, ..
   const cn = `p-4 rounded-lg bg-rose-500 text-white hover:bg-rose-700 ${className || ''}`;
 
   return (
-    <Button className={cn} type="submit" value="タスクを消去" {...others} ref={ref}>
+    <Button className={cn} value="タスクを消去" {...others} ref={ref}>
       {others.children}
     </Button>
   );
 });
 
-DangerButton.displayName = 'SecondaryButton';
+DangerButton.displayName = 'DangerButton';
 
 export { DangerButton };
